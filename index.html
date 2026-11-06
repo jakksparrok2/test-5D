@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria bella Napoli</title>
+    <title>La Forchetta Golosa</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Nasconde le schede non attive */
@@ -17,78 +17,98 @@
 </head>
 <body>
     <div class="container">
+        
         <!-- Header -->
         <header class="tm-header">
             <div class="tm-header-inner">
-                <span class="tm-site-icon">☕</span>
-                <h1 class="tm-site-title">Pizzeria bella Napoli</h1>
+                <span class="tm-site-icon">🍴</span>
+                <h1 class="tm-site-title">La Forchetta Golosa</h1>
             </div>
         </header>
 
         <!-- Navigation Tabs -->
         <nav class="tm-nav">
             <ul class="tm-nav-ul">
-                <li class="tm-nav-li"><a href="#Pizze" class="tm-nav-link active" onclick="openTab(event, 'Pizze')">Pizze</a></li>
-                <li class="tm-nav-li"><a href="#Dolci" class="tm-nav-link" onclick="openTab(event, 'Dolci')">Dolci</a></li>
+                <li class="tm-nav-li"><a href="#Antipasti" class="tm-nav-link active" onclick="openTab(event, 'Antipasti')">Antipasti</a></li>
+                <li class="tm-nav-li"><a href="#Pizze" class="tm-nav-link" onclick="openTab(event, 'Pizze')">Pizze</a></li>
+                <li class="tm-nav-li"><a href="#Dessert" class="tm-nav-link" onclick="openTab(event, 'Dessert')">Dessert</a></li>
                 <li class="tm-nav-li"><a href="#Bevande" class="tm-nav-link" onclick="openTab(event, 'Bevande')">Bevande</a></li>
             </ul>
         </nav>
 
         <!-- Menu Content -->
         <div class="tm-section">
-            
-           <!-- elenco pizze -->
-           <div id="Pizze" class="tm-tab-content active">
-            <div class="tm-list">
-                <div class="tm-list-item">
-                    <img src="img/pizza1.webp" alt="Image" class="tm-list-item-img">
-                    <div class="tm-black-bg tm-list-item-text">
-                        <h3 class="tm-list-item-name">Pizza Margherita <span class="tm-list-item-price">€10.00</span></h3>
-                        <p class="tm-list-item-description">Pomodoro, basilico e mozzarella di bufala.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-            <!-- elenco dolci -->
-            <div id="Dolci" class="tm-tab-content">
-                <div class="tm-list">
-                    <!-- Gli studenti aggiungeranno qui i dolci -->
-                    <div class="tm-list-item">
-                        <p class="tm-placeholder-text">Sezione Dolci in attesa di implementazione...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- elenco bevande -->
-            <div id="Bevande" class="tm-tab-content">
+            <!-- Elenco Antipasti -->
+            <div id="Antipasti" class="tm-tab-content active">
                 <div class="tm-list">
                     <div class="tm-list-item">
-                        <img src="img/espresso.png" alt="Image" class="tm-list-item-img">
+                        <img src="img/antipasti.png" alt="Antipasto" class="tm-list-item-img">
                         <div class="tm-black-bg tm-list-item-text">
-                            <h3 class="tm-list-item-name">Caff&egrave; Espresso <span class="tm-list-item-price">&euro;2.50</span></h3>
-                            <p class="tm-list-item-description">Miscela arabica di qualit&agrave; superiore. </p>
+                            <h3 class="tm-list-item-name">Tagliere del Contadino <span class="tm-list-item-price">€12.00</span></h3>
+                            <p class="tm-list-item-description">Selezione di salumi locali, formaggi freschi e verdure sott'olio.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
-        <!-- end Menu Page -->
+            <!-- Elenco Pizze -->
+            <div id="Pizze" class="tm-tab-content">
+                <div class="tm-list">
+                    <div class="tm-list-item">
+                        <img src="img/pizza1.webp" alt="Pizza" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Pizza Margherita <span class="tm-list-item-price">€10.00</span></h3>
+                            <p class="tm-list-item-description">Pomodoro, basilico e mozzarella di bufala.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elenco Dessert -->
+            <div id="Dessert" class="tm-tab-content">
+                <div class="tm-list">
+                    <div class="tm-list-item">
+                        <img src="img/dessert.png" alt="Dessert" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Tiramisù della Casa <span class="tm-list-item-price">€6.00</span></h3>
+                            <p class="tm-list-item-description">Classico dolce al cucchiaio con mascarpone, caffè e savoiardi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elenco Bevande -->
+            <div id="Bevande" class="tm-tab-content">
+                <div class="tm-list">
+                    <div class="tm-list-item">
+                        <img src="img/espresso.png" alt="Espresso" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Caffè Espresso <span class="tm-list-item-price">€2.50</span></h3>
+                            <p class="tm-list-item-description">Miscela arabica di qualità superiore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end Menu Page -->
     </div>
 
     <script>
         function openTab(evt, tabName) {
             evt.preventDefault();
             var i, tabcontent, tablinks;
+            
             tabcontent = document.getElementsByClassName("tm-tab-content");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].classList.remove("active");
             }
+            
             tablinks = document.getElementsByClassName("tm-nav-link");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active");
             }
+            
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
         }
